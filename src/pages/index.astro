@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import HeroKeyLogo from "@/assets/hero-key-logo.webp";
 import HeroKeyBackground from "@/assets/hero-key-background.webp";
 import LogoVI from "@/assets/logo-vi.svg"
+import PlayButtonIcon from "@/assets/play-button.svg"
 ---
 
 <Layout>
@@ -35,6 +36,13 @@ import LogoVI from "@/assets/logo-vi.svg"
 		  class="size-11 text-white hover:text-yellow-100 transition-colors duration-500 cursor-pointer"
 		/>
 	  </header>
+
+	  <button class="absolute inset-0 m-auto cursor-pointer inline-block">
+		<PlayButtonIcon
+		  id="hero-play-button"
+		  class="text-white m-auto size-32 mt-10 backdrop-blur-3xl rounded-full hover:scale-110 transition-transform duration-500"
+		/>
+	  </button>
 
 	</div>
 </Layout>

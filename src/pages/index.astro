@@ -57,6 +57,16 @@ import LogoCutted from "@/assets/logo-cutted.svg";
 	</div>
 </Layout>
 
+<style>
+	#logo-mask {
+		background: white;
+		mask-image: url("../../public/logo-stack.svg");
+		mask-position: center 25%;
+		mask-repeat: no-repeat;
+		mask-size: clamp(5000vh, 3500%, 0vh);
+	}
+</style>
+
 <script>
 	import { gsap } from "gsap";
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
